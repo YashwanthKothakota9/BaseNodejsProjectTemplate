@@ -25,6 +25,10 @@ Inside `src` folder
 ### Setup the project
 
 - Download this template 
+- Go inside project folder and run following command:
+    ```
+        npm install
+    ```
 - In root directory create a `.env` file and following variables
     ```
         PORT=<port number>
@@ -33,32 +37,14 @@ Inside `src` folder
     ```
         PORT=5000
     ```
-- Inside the `src/config` folder create a file `config.json` and write following code:
+- Go inside the `src/` folder and execute the following command:
     ```
-    {
-  "development": {
-    "username": "root",
-    "password": null,
-    "database": "database_development",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  }
-}
+        npx sequelize init
     ```
 
 - In `dialect` mention whatever DB you are using.
 - In `test` and `prod` environment add correct DB hosted urls.
+- To start the server execute:
+    ```
+        npm run dev
+    ```
