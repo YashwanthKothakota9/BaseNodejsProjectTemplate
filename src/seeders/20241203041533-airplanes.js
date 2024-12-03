@@ -18,14 +18,14 @@ module.exports = {
       {
         modelNumber: 'airbus340',
         capacity: 500,
-        created: new Date(),
-        updated: new Date(),
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
       {
         modelNumber: 'boeing777',
         capacity: 1000,
-        created: new Date(),
-        updated: new Date(),
+        createdAt: new Date(),
+        updatedAt: new Date(),
       },
     ]);
   },
