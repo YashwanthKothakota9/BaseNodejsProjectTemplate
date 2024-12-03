@@ -12,6 +12,6 @@ router.post(
 );
 
 // /api/v1/airplanes GET
-router.post('/', AirplaneController.getAirplanes);
+router.get('/', AirplaneController.getAirplanes);
 
 module.exports = router;
